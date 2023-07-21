@@ -16,7 +16,7 @@ splitfolders.ratio('input',
                    group_prefix=None,
                    move=False)
 
-data_argumentation_threshold = 0.8
+data_argumentation_threshold = 0.2
 data_argumentation_factor = 5
 
 cls_count = []
