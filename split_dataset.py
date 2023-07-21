@@ -1,7 +1,9 @@
-import splitfolders
 import os
-import pandas as pd
+
 import cv2
+import pandas as pd
+import splitfolders
+
 from data_augmentation import data_augmentation
 
 # Split with a ratio.
@@ -36,8 +38,5 @@ for cls in data_argumentation_cls_list:
         for i in range(data_argumentation_factor):
             img = cv2.imread(os.path.join(file_dir, file))
             img = data_augmentation(img)
-            new_file_name = os.path.splitext(file)[0]+f'_{i}'+os.path.splitext(file)[1]
+            new_file_name = os.path.splitext(file)[0] + f'_{i}' + os.path.splitext(file)[1]
             cv2.imwrite(os.path.join(file_dir, new_file_name), img)
-
-
-
