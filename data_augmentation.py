@@ -29,7 +29,7 @@ def vertical_flip(img, flag):
 
 def rotation(img, angle):
     angle = int(random.uniform(-angle, angle))
-    img = ndimage.rotate(img, angle, mode='reflect')
+    img = ndimage.rotate(img, angle, mode="reflect")
     return img
 
 
